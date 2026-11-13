@@ -9,7 +9,7 @@
   },
   "postCreateCommand": [
     "go mod download && (test -f .env || printf 'PORT=\"8080\"\\n' > .env)",
-    "go install github.com/bootdotdev/bootdev@latest",
+    "go install github.com/bootdotdev/bootdev@latest"
   ],
   "forwardPorts": [8080],
   "portsAttributes": {
