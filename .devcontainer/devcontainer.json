@@ -1,0 +1,22 @@
+{
+  "name": "Learn CICD (Go)",
+  "image": "mcr.microsoft.com/devcontainers/base:bookworm",
+  "features": {
+    "ghcr.io/devcontainers/features/go:1": {
+      "version": "1.27.1"
+    }
+  },
+  "postCreateCommand": "go mod download && (test -f .env || printf 'PORT=\"8080\"\\n' > .env)",
+  "forwardPorts": [8080],
+  "portsAttributes": {
+    "8080": {
+      "label": "Notely",
+      "onAutoForward": "openBrowser"
+    }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["golang.go"]
+    }
+  }
+}

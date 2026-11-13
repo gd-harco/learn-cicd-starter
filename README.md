@@ -12,6 +12,10 @@ Create a `.env` file in the root of the project with the following contents:
 PORT="8080"
 ```
 
+### GitHub Codespaces
+
+Open the repository in a Codespace to get Go 1.27.1 and the Go editor extension configured automatically. The Codespace creates the `.env` file and forwards port 8080 for the app.
+
 Run the server:
 
 ```bash
